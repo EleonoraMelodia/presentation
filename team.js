@@ -1,1 +1,10 @@
-const team= [];
+const team= [ {name: "monica",
+    surname: "lucaci",
+    age: 31,
+    city: "rome",
+    hobby: "programming",
+    favoriteFood: "pizza",
+    favoriteFilm: "titanic",
+    favoriteVideoGame: "mario",
+    favoriteBook: "the idiot",
+    petName: "toffee"}];
