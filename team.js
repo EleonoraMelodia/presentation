@@ -1,5 +1,18 @@
-const team= [{
-      name: "Miriana",
+const team = [
+  {
+    name: "Eleonora",
+    surname: "Melodia",
+    age: 31,
+    city: "Palermo",
+    hobby: "Crossfit",
+    favoriteFood: "Pizza",
+    favoriteVideoGame: "Sims",
+    favoriteFilm: "Notte da leoni",
+    favoriteBook: "Piccolo principe",
+    petName: "Zelda",
+  },
+  {
+    name: "Miriana",
     surname: "Falcone",
     age: 21,
     city: "Manfredonia",
@@ -9,8 +22,9 @@ const team= [{
     favoriteFilm: "",
     favoriteBook: "Le affinità elettive",
     petName: "",
-},
-{name: "monica",
+  },
+  {
+    name: "monica",
     surname: "lucaci",
     age: 31,
     city: "rome",
@@ -19,5 +33,7 @@ const team= [{
     favoriteFilm: "titanic",
     favoriteVideoGame: "mario",
     favoriteBook: "the idiot",
-    petName: "toffee"}];
+    petName: "toffee",
+  },
+];
 
