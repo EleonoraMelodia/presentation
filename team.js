@@ -1,5 +1,17 @@
 const team = [
   {
+    name: "Angelo",
+    surname: "Gallina",
+    age: 23,
+    city: "Caltanissetta",
+    hobby: "Calcio, Videogames",
+    favoriteFood: "Pizza",
+    favoriteVideoGame: "Elden Ring",
+    favoriteFilm: "The Wolf Of The WallStreet",
+    favoriteBook: "Insurgent",
+    petName: "Zody",
+  },
+  {
     name: "Luigi",
     surname: "Rauso",
     age: 25,
@@ -11,7 +23,6 @@ const team = [
     favoriteBook: "Metro 2033",
     petName: "Rudy",
   },
-
   {
     name: "Eleonora",
     surname: "Melodia",
