@@ -9,4 +9,15 @@ const team= [{
     favoriteFilm: "",
     favoriteBook: "Le affinità elettive",
     petName: "",
-}];
+},
+{name: "monica",
+    surname: "lucaci",
+    age: 31,
+    city: "rome",
+    hobby: "programming",
+    favoriteFood: "pizza",
+    favoriteFilm: "titanic",
+    favoriteVideoGame: "mario",
+    favoriteBook: "the idiot",
+    petName: "toffee"}];
+
