@@ -60,3 +60,18 @@ const team = [
     petName: "toffee",
   },
 ];
+// exercise 3:Print the team middle age.
+
+
+function middleAge (arr) {
+  let ageSum= 0;
+  for (let i = 0; i < arr.length; i++) {
+    ageSum += arr[i].age;
+
+
+  }
+  let middle= ageSum / arr.length;
+  return middle
+
+} 
+console.log(middleAge(team))
