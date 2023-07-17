@@ -60,3 +60,20 @@ const team = [
     petName: "toffee",
   },
 ];
+
+// 6. Print if there are some members with the same name (name)
+let duplicate = false; // creiamo una variabile "false" per tenere traccia dei duplicati
+
+for (let i = 0; i < team.length; i++) {
+  for (let j = i + 1; j < team.length; j++) {
+    if (team[i].name.toLowerCase() === team[j].name.toLowerCase()) {
+      duplicate = true;
+    }
+  }
+}
+
+if (duplicate === true) {
+  console.log("Controlla l'array, ci sono duplicati");
+} else {
+  console.log("Non ci sono duplicati.");
+}
