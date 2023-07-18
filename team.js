@@ -78,7 +78,7 @@ team.forEach((x) => {
   console.log(x.surname + " " + x.name);
 });
 
-// 5 Print who wrote 'LOL' or League of Legends'
+// 5 Print who wrote 'LOL' or League of Legends' (Miriana Falcone)
 
 team.forEach((x) => {
   if (
