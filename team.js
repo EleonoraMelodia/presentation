@@ -60,3 +60,13 @@ const team = [
     petName: "toffee",
   },
 ];
+
+//Exercise 4: Print who has a pet (name petName).
+for (let i = 0; i < team.length; i++) {
+  let person = team[i];
+  if (person.petName) {
+    console.log(
+      person.name + " ha un animale domestico chiamato " + person.petName
+    );
+  }
+}
