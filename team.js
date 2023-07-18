@@ -60,34 +60,6 @@ const team = [
     petName: "toffee",
   },
 ];
-// exercise 3:Print the team middle age.(Eleonora)
-
-function middleAge(arr) {
-  let ageSum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    ageSum += arr[i].age;
-  }
-  let middle = ageSum / arr.length;
-  return middle;
-}
-console.log(middleAge(team));
-
-// Exercise 6. Print if there are some members with the same name (name) (Luigi)
-let duplicate = false;
-
-for (let i = 0; i < team.length; i++) {
-  for (let j = i + 1; j < team.length; j++) {
-    if (team[i].name.toLowerCase() === team[j].name.toLowerCase()) {
-      duplicate = true;
-    }
-  }
-}
-
-if (duplicate === true) {
-  console.log("Controlla l'array, ci sono duplicati");
-} else {
-  console.log("Non ci sono duplicati.");
-}
 
 // 1 Print the team in alphabetical order (Miriana Falcone)
 
