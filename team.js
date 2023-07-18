@@ -61,7 +61,8 @@ const team = [
   },
 ];
 
-//Exercise 4: Print who has a pet (name petName).
+//Exercise 4: Print who has a pet (name petName)(Angelo).
+console.log("\n");
 for (let i = 0; i < team.length; i++) {
   let person = team[i];
   if (person.petName) {
@@ -70,3 +71,47 @@ for (let i = 0; i < team.length; i++) {
     );
   }
 }
+
+// exercise 3:Print the team middle age.(Eleonora)
+console.log("\n");
+function middleAge(arr) {
+  let ageSum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    ageSum += arr[i].age;
+  }
+  let middle = ageSum / arr.length;
+  return middle;
+}
+console.log(middleAge(team));
+
+// Exercise 6. Print if there are some members with the same name (name) (Luigi)
+console.log("\n");
+let duplicate = false;
+
+for (let i = 0; i < team.length; i++) {
+  for (let j = i + 1; j < team.length; j++) {
+    if (team[i].name.toLowerCase() === team[j].name.toLowerCase()) {
+      duplicate = true;
+    }
+  }
+}
+
+if (duplicate === true) {
+  console.log("Controlla l'array, ci sono duplicati");
+} else {
+  console.log("Non ci sono duplicati.");
+}
+
+//exercise 2: print students in age oder
+console.log("\n");
+console.log("Age sorted students:");
+function sortByAge(arr) {
+  team.sort((a, b) => {
+    return a.age - b.age;
+  });
+
+  team.forEach((arr) => {
+    console.log(arr.name + " " + arr.age);
+  });
+}
+sortByAge(team);
