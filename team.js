@@ -89,3 +89,33 @@ if (duplicate === true) {
   console.log("Non ci sono duplicati.");
 }
 
+// 1 Print the team in alphabetical order (Miriana Falcone)
+
+team.sort((a, b) => {
+  let surname1 = a.surname.toLowerCase();
+  let surname2 = b.surname.toLowerCase();
+
+  if (surname1 < surname2) {
+    return -1;
+  } else if (surname1 > surname2) {
+    return 1;
+  } else return 0;
+});
+
+team.forEach((x) => {
+  console.log(x.surname + " " + x.name);
+});
+
+// 5 Print who wrote 'LOL' or League of Legends'
+
+team.forEach((x) => {
+  if (
+    x.favoriteVideoGame === "League of Legends" ||
+    x.favoriteVideoGame === "LOL"
+  ) {
+    console.log(x.name + " " + x.surname);
+  } else {
+    console.log(x.name + " " + "Non gioca a LoL");
+  }
+});
+
