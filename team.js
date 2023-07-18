@@ -61,16 +61,40 @@ const team = [
   },
 ];
 
-//Exercise 4: Print who has a pet (name petName)(Angelo).
+// 1 Print the team in alphabetical order (Miriana Falcone)
 console.log("\n");
-for (let i = 0; i < team.length; i++) {
-  let person = team[i];
-  if (person.petName) {
-    console.log(
-      person.name + " ha un animale domestico chiamato " + person.petName
-    );
+const sortedByName = team.sort(function (a, b) {
+  const nameA = a.surname + " " + a.name;
+  const nameB = b.surname + " " + b.name;
+
+  if (nameA < nameB) {
+    return -1;
+  } else if (nameA > nameB) {
+    return 1;
+  } else {
+    return 0;
   }
+});
+
+console.log("Team sorted by surname and name:");
+for (let i = 0; i < sortedByName.length; i++) {
+  const member = sortedByName[i];
+  console.log(member.surname + " " + member.name);
 }
+
+//exercise 2: print students in age oder
+console.log("\n");
+console.log("Age sorted students:");
+function sortByAge(arr) {
+  team.sort((a, b) => {
+    return a.age - b.age;
+  });
+
+  team.forEach((arr) => {
+    console.log(arr.name + " " + arr.age);
+  });
+}
+sortByAge(team);
 
 // exercise 3:Print the team middle age.(Eleonora)
 console.log("\n");
@@ -84,7 +108,32 @@ function middleAge(arr) {
 }
 console.log(middleAge(team));
 
-// Exercise 6. Print if there are some members with the same name (name) (Luigi)
+//Exercise 4: Print who has a pet (name petName)(Angelo).
+console.log("\n");
+for (let i = 0; i < team.length; i++) {
+  let person = team[i];
+  if (person.petName) {
+    console.log(
+      person.name + " ha un animale domestico chiamato " + person.petName
+    );
+  }
+}
+
+// 5 Print who wrote 'LOL' or League of Legends' (Miriana Falcone)
+console.log("\n");
+
+team.forEach((x) => {
+  if (
+    x.favoriteVideoGame === "League of Legends" ||
+    x.favoriteVideoGame === "LOL"
+  ) {
+    console.log(x.name + " " + x.surname);
+  } else {
+    console.log(x.name + " " + "Non gioca a LoL");
+  }
+});
+
+// 6. Print if there are some members with the same name (name)(Luigi)
 console.log("\n");
 let duplicate = false;
 
@@ -101,17 +150,3 @@ if (duplicate === true) {
 } else {
   console.log("Non ci sono duplicati.");
 }
-
-//exercise 2: print students in age oder
-console.log("\n");
-console.log("Age sorted students:");
-function sortByAge(arr) {
-  team.sort((a, b) => {
-    return a.age - b.age;
-  });
-
-  team.forEach((arr) => {
-    console.log(arr.name + " " + arr.age);
-  });
-}
-sortByAge(team);
